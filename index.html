@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="./build/css/output.css" type="text/css" />
+  <title>Chat Room</title>
+</head>
+
+<body class="flex min-h-dvh items-center justify-center bg-[url('/build/img/background-image.svg')] bg-cover bg-center">
+  <div class="flex w-80 flex-col gap-14 rounded-lg bg-[rgba(255,255,255,0.025)] p-2.5">
+    <div class="relative flex h-12 *:w-1/2 *:text-white">
+      <button type="button" class="create">Create</button>
+      <button type="button" class="join">Join</button>
+      <span class="slider-bg absolute -z-[1] h-full translate-x-0 rounded-lg bg-blue-600 transition-transform duration-300"></span>
+    </div>
+
+    <form action="" class="flex flex-col gap-4 *:h-12">
+      <input type="text" name="" id="" placeholder="Room Name" class="text-input" />
+      <div class="relative flex items-center">
+        <input type="password" name="" id="" placeholder="Room Password" class="password-input" />
+        <img src="./build/img/eye.svg" alt="" class="absolute right-4 size-6 cursor-pointer" />
+      </div>
+      <button type="button" class="rounded-lg bg-blue-600 text-white active:bg-blue-500">
+        Create Room
+      </button>
+    </form>
+
+    <form action="" class="hidden flex-col gap-4 *:h-12">
+      <input type="text" name="" id="" placeholder="User Name" class="text-input" />
+      <input type="text" name="" id="" placeholder="Room Name" class="text-input" />
+      <div class="relative flex items-center">
+        <input type="password" name="" id="" placeholder="Room Password" class="password-input" />
+        <img src="./build/img/eye.svg" alt="" class="absolute right-4 size-6 cursor-pointer" />
+      </div>
+      <button type="button" class="rounded-lg bg-blue-600 text-white active:bg-blue-500">
+        Join Room
+      </button>
+    </form>
+  </div>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="./build/js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

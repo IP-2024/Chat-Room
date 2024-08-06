@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text-input {
+        @apply rounded-lg border-l-2 border-solid border-blue-600 bg-alpha px-2.5 text-white outline-none;
+    }
+
+    .password-input {
+        @apply h-full w-full rounded-lg border-l-2 border-solid border-blue-600 bg-alpha pl-2.5 pr-14 text-white outline-none;
+    }
+}
