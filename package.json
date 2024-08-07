@@ -8,6 +8,7 @@
     "build": "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch"
   },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "particles.js": "^2.0.0"
   }
 }
